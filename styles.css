@@ -124,6 +124,7 @@ section{padding:40px 0}
 .pkg-note{font-size:.85rem;color:#44536a;margin:0}
 .quote-line{margin-top:auto;padding-top:8px;font-size:.82rem;font-weight:600;color:var(--brand)}
 .scope-line{margin:12px 0 0;font-size:.92rem;font-weight:600;color:var(--brand)}
+.meet-line{margin:0 0 14px;font-weight:600;color:var(--navy)}
 .or-reach{margin:14px 0 0;color:#44536a}
 .or-reach a{font-weight:600;text-decoration:none}
 
