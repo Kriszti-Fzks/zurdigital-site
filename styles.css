@@ -133,7 +133,7 @@ section{padding:40px 0}
   overflow:hidden;display:grid;grid-template-columns:1fr 1.15fr;
   box-shadow:0 10px 28px #0b1f3a0c;
 }
-.work-visual{background:#0f172a}
+.work-visual{background:#fff;align-self:center;border-radius:12px;overflow:hidden;box-shadow:0 10px 28px #0b1f3a14}
 .work-copy{padding:22px 24px}
 .work-note{margin:14px 0 0}
 .work-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:6px;background:#0f172a}
