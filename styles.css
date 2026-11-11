@@ -79,6 +79,7 @@ section{padding:40px 0}
 .picker{margin:0 0 28px}
 .picker-title{margin:0 0 12px;font-size:1.15rem}
 .need-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:821px){.need-cards{grid-template-columns:repeat(6,1fr)}.need-cards .need{grid-column:span 2}.need-cards .need:nth-child(n+4){grid-column:span 3}}
 .need{
   display:flex;flex-direction:column;gap:4px;justify-content:center;
   background:#fff;border:1.5px solid var(--g2);border-radius:12px;
