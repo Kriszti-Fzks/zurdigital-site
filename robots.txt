@@ -37,4 +37,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://zurdigital.netlify.app/sitemap.xml
+Sitemap: https://zurdigital.com/sitemap.xml
