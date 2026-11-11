@@ -1,0 +1,5 @@
+# Pretty URLs rewrites action="/thanks.html" to "/thanks" in the deployed HTML.
+# Combined with a 200 rewrite, the browser POST is served the static thanks
+# page and Netlify Forms never records the submission.
+[build.processing.html]
+  pretty_urls = false

@@ -1,2 +1,4 @@
-/thanks /thanks.html 200
+# GET /thanks still reaches the thank-you page. Use 301 (forced), not 200:
+# a 200 rewrite also catches POSTs and Netlify Forms never sees them.
+/thanks /thanks.html 301!
 https://zurdigital.netlify.app/* https://zurdigital.com/:splat 301!
