@@ -5,6 +5,31 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-2MHFHZ1X98');
+</script><script>
+document.addEventListener("click", function (e) {
+  var el = e.target.closest && e.target.closest("a,button");
+  if (!el) return;
+  var text = (el.innerText || el.textContent || "").replace(/\s+/g, " ").trim();
+  var href = el.getAttribute("href") || "";
+  var url = el.href || href;
+  var hrefLow = href.toLowerCase();
+  var urlLow = String(url || "").toLowerCase();
+  var params = {transport_type: "beacon", link_text: text, link_url: url};
+  if (
+    text === "Book a free online review" ||
+    text === "Book a meeting" ||
+    hrefLow.indexOf("calendly.com/krisztinazur") !== -1 ||
+    urlLow.indexOf("calendly.com/krisztinazur") !== -1
+  ) {
+    gtag("event", "book_review_click", params);
+  }
+  if (hrefLow.indexOf("tel:") === 0 || urlLow.indexOf("tel:") === 0) {
+    gtag("event", "phone_click", params);
+  }
+  if (hrefLow.indexOf("mailto:") === 0 || urlLow.indexOf("mailto:") === 0) {
+    gtag("event", "email_click", params);
+  }
+});
 </script><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zur Digital | Marketing Agency in Orange County, CA</title><meta name="description" content="Zur Digital is a marketing agency in Orange County, CA. Branding, websites, Google listings, social media and ads for small businesses. Free online review."><link rel="canonical" href="https://zurdigital.com/"><meta property="og:title" content="Zur Digital | Marketing Agency in Orange County, CA"><meta property="og:description" content="Zur Digital is a marketing agency in Orange County, CA. Branding, websites, Google listings, social media and ads for small businesses. Free online review."><meta property="og:type" content="website"><meta property="og:url" content="https://zurdigital.com/"><meta property="og:image" content="https://zurdigital.com/assets/og/zur-digital-og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://zurdigital.com/assets/og/zur-digital-og.jpg"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script type="application/ld+json">{
  "@context": "https://schema.org",
  "@type": "ProfessionalService",
