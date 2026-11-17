@@ -128,6 +128,22 @@ section{padding:40px 0}
 .meet-line{margin:0 0 14px;font-weight:600;color:var(--navy)}
 .or-reach{margin:14px 0 0;color:#44536a}
 .or-reach a{font-weight:600;text-decoration:none}
+.copy-email{
+  display:inline-flex;align-items:center;justify-content:center;
+  position:relative;margin:0 0 0 .35em;padding:.15em .6em;
+  font:inherit;font-size:.78rem;font-weight:600;line-height:1.2;
+  color:var(--brand);background:#fff;border:1px solid var(--g2);
+  border-radius:6px;cursor:pointer;vertical-align:middle;
+}
+.copy-email::before{content:"";position:absolute;top:-8px;right:-8px;bottom:-8px;left:0}
+.copy-email:hover{border-color:var(--blue);background:#f4f8fc}
+.copy-email:focus{outline:2px solid var(--sky);outline-offset:2px}
+.copy-email:focus:not(:focus-visible){outline:none}
+.copy-email:focus-visible{outline:2px solid var(--sky);outline-offset:2px}
+.copy-email-status{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
 
 /* Recent work */
 .work-card{
@@ -211,6 +227,7 @@ section{padding:40px 0}
   .about-photo{display:flex;justify-content:center}
   .about-copy p{margin-left:auto;margin-right:auto}
   .work-card,.contact-grid{grid-template-columns:1fr}
+  .copy-email{min-height:44px;min-width:44px;padding:.35em .8em}
   section{padding:32px 0}
   .nav{min-height:64px}
   .logoimg{height:44px}
