@@ -128,6 +128,7 @@ section{padding:40px 0}
 .meet-line{margin:0 0 14px;font-weight:600;color:var(--navy)}
 .or-reach{margin:14px 0 0;color:#44536a}
 .or-reach a{font-weight:600;text-decoration:none}
+.copy-email-wrap{white-space:nowrap}
 .copy-email{
   display:inline-flex;align-items:center;justify-content:center;
   position:relative;margin:0 0 0 .35em;padding:.15em .6em;
